@@ -5,6 +5,7 @@ import it.cosenonjaviste.interceptors.binding.Loggable;
 import it.cosenonjaviste.model.DeliveryNodeDetail;
 import it.cosenonjaviste.model.DeliveryNote;
 import it.cosenonjaviste.model.DeliveryNote_;
+import it.cosenonjaviste.processors.DeliveryNoteProcessorObserver;
 import it.cosenonjaviste.utils.BaseArchive;
 import it.cosenonjaviste.utils.DeliveryNoteDummyFactory;
 import org.jboss.arquillian.container.test.api.Deployment;
@@ -44,7 +45,8 @@ public class DeliveryNoteServiceTest {
                 .addClass(DeliveryNoteDummyFactory.class)
                 .addClass(LoggableInterceptor.class)
                 .addClass(Loggable.class)
-                .addClass(DeliveryNote_.class);
+                .addClass(DeliveryNote_.class)
+                .addClass(DeliveryNoteProcessorObserver.class);
     }
 
     /**

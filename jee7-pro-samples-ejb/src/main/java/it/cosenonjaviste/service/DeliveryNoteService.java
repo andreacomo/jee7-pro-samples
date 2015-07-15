@@ -6,11 +6,14 @@ import it.cosenonjaviste.model.DeliveryNote_;
 import org.hibernate.annotations.QueryHints;
 
 import javax.ejb.Stateless;
+import javax.enterprise.event.Event;
+import javax.enterprise.inject.Any;
 import javax.inject.Inject;
 import javax.persistence.*;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
+import java.util.EventListener;
 import java.util.List;
 import java.util.logging.Logger;
 
@@ -27,9 +30,15 @@ public class DeliveryNoteService {
     @Inject
     private Logger logger;
 
+    @Inject
+    @Any
+    private Event<DeliveryNote> event;
+
     public DeliveryNote save(DeliveryNote deliveryNote) {
         DeliveryNote merge = this.entityManager.merge(deliveryNote);
         logger.info("Saving delivery note " + merge.getNumber());
+        event.fire(merge);
+        //System.out.println(1/0);
         return merge;
     }
 

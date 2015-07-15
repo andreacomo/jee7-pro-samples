@@ -14,7 +14,10 @@ public class LoggableInterceptor {
     public Object invoke(InvocationContext context) throws Exception {
         Logger logger = Logger.getLogger(context.getMethod().getDeclaringClass().getName());
         logger.info("Eseguo il metodo " + context.getMethod());
-        return context.proceed();
+        Object result = context.proceed();
+        logger.info("Esco dal metodo " + context.getMethod());
+
+        return result;
     }
 
 }
