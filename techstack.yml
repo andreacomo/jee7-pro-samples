@@ -1,0 +1,173 @@
+repo_name: andreacomo/jee7-pro-samples
+report_id: 14ae4a646b349fbf6eafe97df5c88c7d
+version: 0.1
+repo_type: Public
+timestamp: '2023-12-25T20:39:40+00:00'
+requested_by: andreacomo
+provider: github
+branch: master
+detected_tools_count: 15
+tools:
+- name: CSS 3
+  description: The latest evolution of the Cascading Style Sheets language
+  website_url: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/6727/css.png
+  detection_source: Repo Metadata
+- name: Java
+  description: A concurrent, class-based, object-oriented, language specifically designed
+    to have as few implementation dependencies as possible
+  website_url: https://www.java.com
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/995/K85ZWV2F.png
+  detection_source: Repo Metadata
+- name: SQL
+  description: It is a domain-specific language used in programming
+  website_url: https://en.wikipedia.org/wiki/SQL
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/2271/default_068d33483bba6b81ee13fbd4dc7aab9780896a54.png
+  detection_source: jee7-pro-samples-ejb/src/main/resources/import.sql
+  last_updated_by: andrea.como
+  last_updated_on: 2015-07-13 22:39:55.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source: Repo Metadata
+- name: JBoss
+  description: An open source Java EE-based application server
+  website_url: https://developers.redhat.com/products/eap
+  open_source: false
+  hosted_saas: false
+  category: Application Hosting
+  sub_category: Web Servers
+  image_url: https://img.stackshare.io/service/2188/unnamed.jpg
+  detection_source: jee7-pro-samples-ejb/pom.xml
+  last_updated_by: andrea.como
+  last_updated_on: 2015-07-13 22:39:55.000000000 Z
+- name: JUnit
+  description: A programmer-oriented testing framework for Java
+  website_url: http://junit.org/
+  license: EPL-1.0
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Testing Frameworks
+  image_url: https://img.stackshare.io/service/2020/874086.png
+  detection_source: jee7-pro-samples-ejb/pom.xml
+  last_updated_by: andrea.como
+  last_updated_on: 2015-07-13 22:39:55.000000000 Z
+- name: javax.enterprise:cdi-api
+  description: APIs for CDI
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source: jee7-pro-samples-ejb/pom.xml
+  last_updated_by: andrea.como
+  last_updated_on: 2015-07-13 22:39:55.000000000 Z
+- name: junit:junit
+  description: JUnit is a unit testing framework for Java
+  license: EPL-1.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source: jee7-pro-samples-ejb/pom.xml
+  last_updated_by: andrea.como
+  last_updated_on: 2015-07-13 22:39:55.000000000 Z
+- name: org.hibernate.javax.persistence:hibernate-jpa-2.1-api
+  description: Clean-room definition of JPA APIs intended for use in developing Hibernate
+    JPA implementation
+  license: EPL-2.0,AAL
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source: jee7-pro-samples-ejb/pom.xml
+  last_updated_by: andrea.como
+  last_updated_on: 2015-07-13 22:39:55.000000000 Z
+- name: org.hibernate:hibernate-core
+  description: Hibernate's core ORM functionality
+  license: LGPL-2.0-only,GPL-3.0-or-later
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source: jee7-pro-samples-ejb/pom.xml
+  last_updated_by: andrea.como
+  last_updated_on: 2015-07-13 22:39:55.000000000 Z
+- name: org.hibernate:hibernate-jpamodelgen
+  description: Annotation Processor to generate JPA 2 static metamodel classes
+  license: LGPL-2.0-only,GPL-3.0-or-later
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source: jee7-pro-samples-ejb/pom.xml
+  last_updated_by: andrea.como
+  last_updated_on: 2015-07-13 22:39:55.000000000 Z
+- name: org.hibernate:hibernate-validator
+  description: Hibernate's Bean Validation
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source: jee7-pro-samples-ejb/pom.xml
+  last_updated_by: andrea.como
+  last_updated_on: 2015-07-13 22:39:55.000000000 Z
+- name: org.jboss.arquillian.junit:arquillian-junit-container
+  description: JUnit Container Implementation for the Arquillian Project
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source: jee7-pro-samples-ejb/pom.xml
+  last_updated_by: andrea.como
+  last_updated_on: 2015-07-13 22:39:55.000000000 Z
+- name: org.jboss.arquillian.protocol:arquillian-protocol-servlet
+  description: Protocol handler for communicating using a servlet / http following
+    the Servlet 2.5/ 2.5/.x spec
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source: jee7-pro-samples-ejb/pom.xml
+  last_updated_by: andrea.como
+  last_updated_on: 2015-07-13 22:39:55.000000000 Z
+- name: org.jboss.resteasy:jaxrs-api
+  description: REST and JAXRS
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source: jee7-pro-samples-web/pom.xml
+  last_updated_by: andrea.como
+  last_updated_on: 2015-07-13 22:39:55.000000000 Z
